@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heartfelt Apology</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(5, 53, 61);
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    p {
+      line-height: 1.8;
+    }
+
+    /* Header Section */
+    header {
+      padding: 30px;
+      background-color: rgb(5, 53, 61);;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.rem;
+    }
+
+   /* Image Gallery Section */
+   .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 15px;
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+
+    /* Message Card */
+    .card {
+    background: #f5edd1;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .card h2 {
+      color: #79005f;
+      margin-bottom: 15px;
+    }
+
+    /* Button */
+    .btn {
+      background-color: #79004b;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1rem;
+      margin-top: 20px;
+      display: inline-block;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      background-color: #004d40;
+    }
+
+    /* Floating Music Player */
+    .music-player {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #fff;
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .music-player button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: #00796b;
+    }
+
+    .music-player button:hover {
+      color: #004d40;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: rgb(5, 53, 61);;
+      color: white;
+      margin-top: 20px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>I'm Truly Sorry, My love 💗</h1>
+  </header>
+
+  <!-- Image Gallery Section -->
+  <div class="gallery">
+    <img src="D1.jpg" alt="Apology Image 1"> <!-- Replace with your image URLs -->
+    <img src="D2.jpg" alt="Apology Image 2">
+    <img src="D3.jpg" alt="Apology Image 3">
+    <img src="D4.jpg" alt="Apology Image 4">
+    <img src="D5.jpg" alt="Apology Image 5">
+    <img src="D6.jpg" alt="Apology Image 6">
+  </div>
+
+  <!-- Apology Message Card -->
+  <div class="card">
+    <h2>A Heartfelt Apology</h2>
+    <p>Dear Darasimi💞,</p>
+    <p> I tried to search deeply for a word deeper than sorry to express myself, i found none, I guess words failed me this time. 
+        I tried looking for an act to express how sorry i am , I found none, I outdid myself.
+        How can I reachout to her? she's so close to my heart but my words have created a wall between us, now she can hardly hear me 
+        How can I express my deepest feeings ? she's so close but my words have created a fog, now she can hardly see me 
+        <p> Pardon me for speaking like i'm writing a poem , I just can't withhold it. Every memories we shared is enough to inspire a writer.
+            Times where my migraine did not go away by using paracetermol, or when my cupboard was without a cockroach, or is it when you showed support despite going through personal stuffs 
+            or the days where the calendar testifyed you are a 10/10, and so many more.
+            <p>
+                I know I fucked up and realizing how dissappointed you're, you have every right not to be willing to talk to me again.
+                But this is from my heart those words means nothingggg, I didn't think my words through. Please talk to me, I don't care how long it takes to get to you, i'll be by the door.
+                From the left part of my chest i feel you and i'm hurt i said those words to you.
+
+               <p>
+                Take care my favourite girl 💞...  I love you 💞💖
+               </p> 
+            </p>
+
+    <a href="#music" class="btn" onclick="playMusic()">Listen to the Song</a>
+  </div>
+
+  <!-- Music Player -->
+  <div class="music-player" id="music">
+    <button onclick="playMusic()">▶ Play</button>
+    <button onclick="pauseMusic()">⏸ Pause</button>
+    <audio id="apologyMusic" src="Fireboy-DML-Need-You-[TrendyBeatz.com].mp3" type="audio/mp3"></audio> <!-- Replace with your MP3 file -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 | Created with 💖 by Daniel</p>
+  </footer>
+
+  <script>
+    const music = document.getElementById('apologyMusic');
+
+    function playMusic() {
+      music.play();
+    }
+
+    function pauseMusic() {
+      music.pause();
+    }
+  </script>
+  
+</body>
+</html>
